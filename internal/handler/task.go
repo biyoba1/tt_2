@@ -29,7 +29,7 @@ func (h *Handler) tCreate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	taskID, err := h.services.TaskService.CreateTask(&input)
+	taskID, err := h.services.CreateTask(&input)
 	if err != nil {
 		errorResponse(w, http.StatusInternalServerError, err.Error())
 		return
