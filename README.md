@@ -3,10 +3,11 @@
 # тестовые запросы на проверку (через терминал)
 создать задачу
 ```
-curl -X POST http://localhost:8080/task/create \  
+curl -X POST http://localhost:8080/task/create \
 -H "Content-Type: application/json" \
 -d '{"task": "Example Task"}'
 ```
+
 посмотреть задачу
 ```
 curl -X GET "http://localhost:8080/task/check-result?task_id=<таск айди из пост запроса>"
