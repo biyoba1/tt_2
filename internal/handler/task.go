@@ -50,6 +50,10 @@ func (h *Handler) tStatus(w http.ResponseWriter, r *http.Request) {
 	}
 
 	taskIdentification := r.URL.Query().Get("task_id")
+	if taskIdentification == "" {
+		errorResponse(w, http.StatusBadRequest, "task_id is required")
+		return
+	}
 
 	task, err := h.services.CheckTaskStatus(taskIdentification)
 	if err != nil {

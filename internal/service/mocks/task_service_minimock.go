@@ -80,10 +80,10 @@ type TaskServiceMockCancelAllTasksExpectation struct {
 }
 
 // Marks this method to be optional. The default behavior of any method with Return() is '1 or more', meaning
-// the tests will fail minimock's automatic final call check if the mocked method was not called at least once.
+// the test will fail minimock's automatic final call check if the mocked method was not called at least once.
 // Optional() makes method check to work in '0 or more' mode.
 // It is NOT RECOMMENDED to use this option unless you really need it, as default behaviour helps to
-// catch the problems when the expected method call is totally skipped during tests run.
+// catch the problems when the expected method call is totally skipped during test run.
 func (mmCancelAllTasks *mTaskServiceMockCancelAllTasks) Optional() *mTaskServiceMockCancelAllTasks {
 	mmCancelAllTasks.optional = true
 	return mmCancelAllTasks
@@ -286,10 +286,10 @@ type TaskServiceMockCheckTaskStatusExpectationOrigins struct {
 }
 
 // Marks this method to be optional. The default behavior of any method with Return() is '1 or more', meaning
-// the tests will fail minimock's automatic final call check if the mocked method was not called at least once.
+// the test will fail minimock's automatic final call check if the mocked method was not called at least once.
 // Optional() makes method check to work in '0 or more' mode.
 // It is NOT RECOMMENDED to use this option unless you really need it, as default behaviour helps to
-// catch the problems when the expected method call is totally skipped during tests run.
+// catch the problems when the expected method call is totally skipped during test run.
 func (mmCheckTaskStatus *mTaskServiceMockCheckTaskStatus) Optional() *mTaskServiceMockCheckTaskStatus {
 	mmCheckTaskStatus.optional = true
 	return mmCheckTaskStatus
@@ -598,10 +598,10 @@ type TaskServiceMockCreateTaskExpectationOrigins struct {
 }
 
 // Marks this method to be optional. The default behavior of any method with Return() is '1 or more', meaning
-// the tests will fail minimock's automatic final call check if the mocked method was not called at least once.
+// the test will fail minimock's automatic final call check if the mocked method was not called at least once.
 // Optional() makes method check to work in '0 or more' mode.
 // It is NOT RECOMMENDED to use this option unless you really need it, as default behaviour helps to
-// catch the problems when the expected method call is totally skipped during tests run.
+// catch the problems when the expected method call is totally skipped during test run.
 func (mmCreateTask *mTaskServiceMockCreateTask) Optional() *mTaskServiceMockCreateTask {
 	mmCreateTask.optional = true
 	return mmCreateTask

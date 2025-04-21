@@ -22,13 +22,6 @@ func init() {
 	initializer.PingDatabase()
 }
 
-/*
-	TODO
-	Можно дополнительно покрыть код тестами,
-	если сервер будет разрастаться логикой,
-	на данном моменте не стал
-*/
-
 func main() {
 	postgres, err := repository.NewPostgresDB(repository.Config{
 		Host:     os.Getenv("DB_HOST"),
